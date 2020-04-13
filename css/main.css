@@ -1,0 +1,373 @@
+body {
+    font-family: 'Oxanium', cursive;
+    height: 100vh;
+    width: 500vw;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+span {
+    font-size: 110%;
+    font-weight: bold;
+    color:#FFB92D; 
+}
+
+.hidden {
+    display: none;
+}
+
+.instructText {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+}
+
+.instructions img {
+    widtH: 12%;
+    padding-left: 2%;
+}
+
+.title {
+    color:#FFB92D;
+    font-weight: bold;
+    font-size: 37px;
+    margin-top: 15%;
+}
+
+.subTitle {
+    color: white;
+    font-size: 22px;
+    line-height: 110%;
+    margin-top: 5%;
+}
+
+.subText {
+    color: white;
+    font-size: 18px;
+    margin-top: 5%;
+}
+
+.subTextitalic {
+    font-size: 20px;
+    color: white;
+    font-style: italic;
+    margin-top: 1%;
+}
+
+
+#wrapper1 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+#phageIMG {
+    height: 70vh;
+    position: absolute;
+    right: 12vw;
+    top: 10vh;
+}
+
+#phageIMG video {
+    height: 100%;
+}
+
+#wrapper2 {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+#wrapper3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+#phageIMG2 {
+    width: 45vw;
+    position: absolute;
+    right: 10vw;
+    top: 8vh;
+}
+
+#phageIMG2 img {
+    width: 100%;
+}
+
+#wrapper4 {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+#phageIMG3 {
+    width: 45vw;
+    position: absolute;
+    right: 10vw;
+    top: 8vh;
+}
+
+#phageIMG3 img {
+    width: 100%;
+}
+
+#wrapper5 {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+}
+
+#dnaIMG {
+    position: absolute;
+    height: 100vh;
+    right: 8vw;
+}
+
+
+#dna-image {
+   heighT: 100%;
+}
+
+#r1 {
+    position: absolute;
+    right: 24%;
+    top: 31vh;
+    width:20%;
+    opacity: .6;
+}
+
+#r1:hover {
+    opacity: 1;
+}
+
+#r2 {
+    position: absolute;
+    right: 26%;
+    bottom: 36vh;
+    width:20%;
+    opacity: .6;
+}
+
+#r2:hover {
+    opacity: 1;
+}
+
+#r3 {
+    position: absolute;
+    left: 24%;
+    bottom: 22vh;
+    width:20%;
+    opacity: .6;
+}
+
+#r3:hover {
+    opacity: 1;
+}
+
+#r4 {
+    position: absolute;
+    left: 24%;
+    top: 12vh;
+    width:20%;
+    opacity: .6;
+}
+
+#r4:hover {
+    opacity: 1;
+}
+
+#dnaInfoDiv {
+    position: absolute;
+    top: 15vh;
+    left: 47vw;
+    width: 23vw;
+    height: 60vh;
+}
+
+#dnaInfoDiv p {
+    padding-left: 6%;
+    padding-top: 2%;
+    line-height: 114%;
+}
+
+#dnaInfoDiv .subTitle {
+    color: #58a1dd;
+    font-size: 20px;
+}
+
+#dnaInfoDiv .subText {
+    font-size: 17px;
+}
+
+
+#info4 {
+    border-right: 3px dotted white;
+}
+
+#back-button {
+    width: 50px;
+    heighT: 50px;
+    position: fixed;
+    padding: 3%;
+}
+
+
+#dragWrapper {
+    width: 45vw;
+    position: absolute;
+    right: 10vw;
+    top: 8vh;
+}
+
+#dragWrapper video {
+    height: 100%;
+}
+
+
+.draggable {
+    position: absolute;
+    left: 7%;
+    top: 15%;
+    height: 110px;
+    width: 110px;
+    z-index: 2;
+}
+
+
+.draggable img {
+    width: 100%;
+}
+
+.infoText {
+    margin-top: 15vh;
+    margin-left: 15vw;
+    height: 60vh;
+    width: 30vw;
+    z-index: 1;
+    position: absolute;
+    transition: all 4s ease;
+}
+
+#info0 {
+    border-right: 3px dotted white;
+}
+
+#info1 {
+    opacity: 0;
+}
+
+#info2 {
+    opacity: 0;
+}
+
+#info3 {
+    opacity: 0;
+}
+
+#info4 {
+    opacity: 0;
+}
+
+#progressBar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    height: 50px;
+    z-index: 2;
+    bottom: 5%;
+    left: 25vw;
+    justify-content: center;
+}
+
+#node1 {
+    height: 40px;
+    width: 40px;
+}
+
+
+#node2 {
+    height: 40px;
+    width: 40px;
+}
+
+#node2-svg {
+    transition: all .8s ease-in;
+}
+
+#node3 {
+    height: 40px;
+    width: 40px;
+}
+
+#node3-svg {
+    transition: all .8s ease-in;
+}
+
+#node4 {
+    height: 40px;
+    width: 40px;
+}
+
+#node4-svg {
+    transition: all .8s ease-in;
+}
+
+#node5 {
+    height: 40px;
+    width: 40px;
+}
+
+#node5-svg {
+    transition: all .8s ease-in;
+}
+
+#line1 {
+width: 13%;
+height: 5px;
+background-color: white;
+margin-top: 2.1%;
+transition: all .8s ease-out;
+}
+
+#line2 {
+    width: 13%;
+height: 5px;
+background-color: white;
+margin-top: 2.1%;
+transition: all .8s ease-in;
+}
+
+#line3 {
+    width: 13%;
+height: 5px;
+background-color: white;
+margin-top: 2.1%;
+transition: all .8s ease-in;
+}
+
+#line4 {
+    width: 13%;
+height: 5px;
+background-color: white;
+margin-top: 2.1%;
+transition: all .8s ease-in;
+}
